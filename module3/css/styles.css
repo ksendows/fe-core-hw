@@ -30,11 +30,11 @@ p {
 ul {
 	list-style: none;
 }
-.bold-text {
+h4, .bold-text {
 	font: 14px/19px Arial;
 	padding-bottom: 24px;
 }
-ul.bold-text > li {
+ul.principles-list > h4 {
 	line-height: 22.8px;
 }
 .principles-list {
