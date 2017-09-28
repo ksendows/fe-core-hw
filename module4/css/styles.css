@@ -10,25 +10,21 @@ font: 13px/19px Arial;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 40px;
-	padding-right: 70px;
+	padding-left: 60px;
+	padding-right: 60px;
 	padding-bottom: 215px;
 	background-color: white;
 }
 .left-column {
 	float: left;
-	height: 650px;
 	width: 69%;
-	overflow: hidden;
 }
 .right-column {
-	margin-left: 69%;
-	height: 650px;
+	float: right;
 	width: 25%;
-	overflow: hidden;
 	padding-left: 6%;
 }
-.clearfix {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -98,7 +94,7 @@ ul.principles-list > li {
 }
 .arrow-list {
 	padding-top: 14px;
-	padding-right: 45px;
+	padding-right: 30px;
 	float: left;
 }
 ul.arrow-list > li::before {
