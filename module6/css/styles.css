@@ -22,7 +22,7 @@ header {
 	width: var(--main-width);
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 96px;
+	padding-top: 49px;
 	height: 237px;
 }
 .about-header {
@@ -32,10 +32,6 @@ header {
 	height: 237px;
 }
 .logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);
 	height: 138px;
 	width: 138px;
 	background-color: white;
@@ -50,18 +46,13 @@ nav {
 	text-transform: uppercase;
 	font: 28px 'Pathway Gothic One', Myriad Pro;
 }
-.menu-left, .menu-right {
+.menu {
 	display: flex;
-	justify-content: space-around;
-	width: 34%;
-}
-.menu-left {
-	float: left;
-	padding-left: 7%;
-}
-.menu-right {
-	float: right;
-	padding-right: 7%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 .menu-item {
 	position: relative;
@@ -147,7 +138,7 @@ main {
 }
 section.recent-posts {
 	flex: 3;
-	padding-right: 55px;
+	/*padding-right: 55px;*/
 }
 section.columns-section {
 	display: flex;
@@ -193,6 +184,9 @@ h5 {
 	font: 13px/15px Arial;
 	padding-bottom: 15px;
 }
+div.post-header {
+	padding-right: 45px;
+}
 div.post-header>div.date {
 	width: 31px;
 	height: 31px;
@@ -215,8 +209,18 @@ div.post-info {
 	font: 10px Arial;
 }
 div.post-body {
-	position: relative;
+	/*position: relative;*/
 	padding-bottom: 55px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+figure.post-picture {
+	min-width: 200px;
+
+}
+.post-body>.article-button {
+	min-width: 200px;
 }
 article.post {
 	height: 250px;
@@ -230,7 +234,7 @@ article.post>p {
 article.post>p:last-child {
 	padding-bottom: 0;
 }
-figure.post-picture {
+figure.post-picture-about {
 	float: left;
 	padding-right: 20px;
 }
@@ -437,8 +441,12 @@ div.slide-box {
 
 
 
-nav.footer-nav {
-    height: 135px;
+.footer-menu {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 133px;
     width: var(--main-width);
     margin-left: auto;
     margin-right: auto;
@@ -447,13 +455,7 @@ nav.footer-nav {
     padding-bottom: 15px;
     padding-left: 11%;
     padding-right: 12%;
-    box-sizing: border-box;    
-}
-.footer-menu {
-	display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 .footer-item {
 	padding-bottom: 13px;
@@ -486,6 +488,11 @@ ul.footer-menu>li:last-child>a {
 }
 .social:hover {
 	filter: blur(2px);
+}
+.social>a {
+	width: inherit;
+	height: inherit;
+	display: block;
 }
 .fb {
     width: 40px; height: 40px;

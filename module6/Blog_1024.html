@@ -11,9 +11,8 @@
 </head>
 <body>
 <header>
-	<div class="logo">Journey</div>
 	<nav>
-		<ul class="menu-left">
+		<ul class="menu">
 			<li class="menu-item"><a href="#">Home</a></li>
 			<li class="menu-item">
 				<a href="#">About</a>
@@ -24,8 +23,9 @@
 				</ul>
 			</li>
 			<li class="menu-item"><a href="#">Gallery</a></li>
-		</ul>
-		<ul class="menu-right">
+			<li class="menu-item">
+				<div class="logo">Journey</div>
+			</li>
 			<li class="menu-item"><a href="#">Tours</a></li>
 			<li class="menu-item"><a href="#">Blog</a></li>
 			<li class="menu-item"><a href="#">Contacts</a></li>	
@@ -46,16 +46,18 @@
 				</div>
 			</div>
 
-			<div class="post-body clearfix">
+			<div class="post-body">
 				<figure class="post-picture">
 					<img src="./img/post1.png" alt="Post picture">
 				</figure>
-				<article class="post">
-					<h5>Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare.</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>
-					<p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>		
-				</article>
-				<input type="button" value="Details">
+				<div class="article-button">
+					<article class="post">
+						<h5>Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare.</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>
+						<p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>		
+					</article>
+					<input type="button" value="Details">
+				</div>
 			</div>
 			
 			<hr>
@@ -72,12 +74,15 @@
 				<figure class="post-picture">
 				<img src="./img/post2.png" alt="Post picture">	
 				</figure>
-				<article class="post">
-					<h5>Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare.</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>
-					<p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>	
-				</article>	
-				<input type="button" value="Details">
+				
+				<div class="article-button">
+					<article class="post">
+						<h5>Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare.</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>
+						<p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>	
+					</article>	
+					<input type="button" value="Details">
+				</div>
 			</div>
 
 	</section>
@@ -117,8 +122,7 @@
 <a href="#" class="top-button"></a>	
 
 <footer>
-	<nav class="footer-nav">
-		<ul class="footer-menu">
+	<ul class="footer-menu">
 			<li class="footer-item"><a href="#">FAQs page</a></li>
 			<li class="footer-item"><a href="#">Useful links</a></li>
 			<li class="footer-item"><a href="#">Insurance</a></li>
@@ -130,8 +134,7 @@
 				<a class="contact" href="tel:1-800-234-5678">TEL: 1-800-234-5678</a> <br>
 				<a class="contact" href="mailto:info@demolink.org">info@demolink.org</a>
 			</li>
-		</ul>		
-	</nav>
+	</ul>	
 
 <div class="social-links">
 	<div class="social tw"><a href="twitter.com" target="blank"></a></div>
