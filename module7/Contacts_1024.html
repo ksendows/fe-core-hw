@@ -11,9 +11,9 @@
 </head>
 <body>
 <header>
-	<div class="logo">Journey</div>
+	
 	<nav>
-		<ul class="menu-left">
+		<ul class="menu">
 			<li class="menu-item"><a href="#">Home</a></li>
 			<li class="menu-item">
 				<a href="#">About</a>
@@ -24,8 +24,9 @@
 				</ul>
 			</li>
 			<li class="menu-item"><a href="#">Gallery</a></li>
-		</ul>
-		<ul class="menu-right">
+			<li class="menu-item">
+				<div class="logo">Journey</div>
+			</li>
 			<li class="menu-item"><a href="#">Tours</a></li>
 			<li class="menu-item"><a href="#">Blog</a></li>
 			<li class="menu-item"><a href="#">Contacts</a></li>	
@@ -33,7 +34,7 @@
 	</nav>
 </header>
 
-<main>
+<main class="contacts-main">
 
 	<section class="map">
 		<h3>Stay in touch</h3>
@@ -89,10 +90,14 @@
 <aside class="contact-form">
 	<h3>Contact us</h3>
 	<form action="#" class="contact" method="get">
-		<input type="text" name="name" value="NAME">	
-		<input type="email" name="email" value="EMAIL">
-		<input type="text" name="subject" value="SUBJECT">
+		<input type="text" name="name" placeholder="NAME" required>	
+		<!-- <div class="required">*This field is required</div> -->
+		<input type="email" name="email" placeholder="EMAIL">
+		<input type="text" name="subject" placeholder="SUBJECT">
 		<textarea name="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+
+		<input type="button" name="clear" value="Clear">
+		<input type="submit" name="submit" value="Send">
 	</form>
 
 </aside>
@@ -101,7 +106,6 @@
 <a href="#" class="top-button"></a>	
 
 <footer>
-	<nav class="footer-nav">
 		<ul class="footer-menu">
 			<li class="footer-item"><a href="#">FAQs page</a></li>
 			<li class="footer-item"><a href="#">Useful links</a></li>
@@ -115,7 +119,6 @@
 				<a class="contact" href="mailto:info@demolink.org">info@demolink.org</a>
 			</li>
 		</ul>		
-	</nav>
 
 <div class="social-links">
 	<div class="social tw"><a href="twitter.com" target="blank"></a></div>
