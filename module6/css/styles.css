@@ -51,8 +51,8 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 .menu-item {
 	position: relative;
@@ -137,7 +137,7 @@ main {
 	padding-bottom: 40px;
 }
 section.recent-posts {
-	flex: 3;
+	flex: 23;
 	/*padding-right: 55px;*/
 }
 section.columns-section {
@@ -147,7 +147,7 @@ section.columns-section {
 	margin-bottom: 21px;
 }
 section.left-section {
-	flex: 3;
+	flex: 11;
 	margin-right: 30px;
 }
 h3 {
@@ -209,18 +209,18 @@ div.post-info {
 	font: 10px Arial;
 }
 div.post-body {
-	/*position: relative;*/
-	padding-bottom: 55px;
+	padding-bottom: 35px;
+	padding-right: 40px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 figure.post-picture {
-	min-width: 200px;
-
+	flex: 5;
+	padding-right: 15px;
 }
 .post-body>.article-button {
 	min-width: 200px;
+	flex: 6;
 }
 article.post {
 	height: 250px;
@@ -305,7 +305,10 @@ hr {
 
 aside.side-bar {
 	color: #263555;
-	flex: 1;
+	flex: 7;
+}
+aside.about-aside {
+	flex: 4;
 }
 aside.side-bar>h3 {
 	padding-bottom: 37px;
