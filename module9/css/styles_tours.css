@@ -1,0 +1,275 @@
+:root {
+  --main-width: 90%;
+}
+
+
+main {
+	box-sizing: border-box;
+	width: var(--main-width);
+	height: 100%;
+	padding: 74px 46px 65px 46px;
+	background-color: #ffffff;
+}
+
+h3 {
+	font: 32px 'Pathway Gothic One', Myriad Pro;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+main.contacts-main h3 {
+	padding-bottom: 43px;
+}
+.tours-card {
+	margin-bottom: 78px;
+}
+.tours-card>img {
+	width: 52%;
+}
+h6 {
+	font: 12px Arial;
+	color: #263555;
+	margin-bottom: 13px;
+	margin-top: 0;
+}
+.tour-info {
+	position: relative;
+	width: 47%;
+	padding-left: 5px;
+}
+.tour-info>p {
+	font: 10px Arial;
+	color: #4e5050;
+	padding-bottom: 5px;
+	margin: 0;
+}
+.tour-info>p.blue-price {
+	font: 13px Arial;
+	color: #38afe5;
+	padding-bottom: 13px;
+	text-transform: uppercase;
+}
+.tour-info>input {
+	width: 61px;
+    font: 11px/14px Arial;
+    position: absolute;
+    margin-top: 17px;
+    right: 53%;
+    border-radius: 4px;
+    background-color: #fbf6fa;
+}
+
+
+aside.tours-search {
+	padding-left: 6px;
+}
+
+
+form {
+	font: 10px Arial;
+	color: #4e5050;
+	margin-bottom: 11px;
+}
+form p {
+	margin-bottom: -2px;
+}
+
+.select {
+	display: block;
+	margin-bottom: 40px;
+}
+.search .select {
+	margin-bottom: 45px;
+}
+.select>* {
+	font-size: 10px;
+	background-color: #fcfafa;
+	color: #868f8f;
+}
+.select-field {
+	width: 85%;
+	height: 22px;
+	text-align: left;
+}
+.select-arrow {
+	height: 22px;
+}
+.select-list {
+	min-width: 95%;
+	border-radius: 0;
+	background-color: #e3e2e2;
+	top: 18px;
+}
+.select-list>li>a {
+	color: #ffffff;
+}
+form.search>p:first-child {
+	color: #38afe5;
+    margin-bottom: 4px;
+}
+form.search label {
+	font-weight: normal;
+}
+form.search>input {
+	margin-top: 33px;
+}
+form.browse input {
+	margin-top: 39px;
+}
+form label {
+	margin-bottom: 10px;
+}
+form input {
+	font-size: 12px;
+	line-height: 16px;
+	width: 63px;
+}
+.tours-search>h3:last-of-type {
+	margin-top: 10px;
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	main {
+		padding: 57px 34px 65px 34px;
+	}
+	h3 {
+		font-size: 28px;
+		padding-bottom: 48px;
+	}
+	.tours-card>img {
+    width: 53%;
+	}
+	.tour-info {
+		padding-left: 0;
+	}
+	h6 {
+		font-size: 14px;
+	}
+	.tour-info>p {
+		font-size: 12px;
+	}
+	.tour-info>p.blue-price {
+		font-size: 16px;
+	}
+	.tour-info>input {
+	    width: 74px;
+	    font: 13px/14px Arial;
+	    margin-top: 11px;
+	    right: 55%;
+	}
+	.tours-card {
+		margin-bottom: 75px;
+	}
+	.tours-card:last-child {
+		margin-left: -19px;
+	}
+	aside h3 {
+		margin-top: 41px;
+		padding-left: 4px;
+		padding-bottom: 23px;
+	}
+	aside h3:last-child {
+		padding-left: 0;
+	}
+	.browse {
+		padding-left: 4px;
+	}
+	form.search>input {
+		margin-top: 10px;
+	}
+	.top-button {
+		transform: scale(1.2,1.2);
+    	right: 6.2%;
+	}
+	.social-links {
+		padding-top: 22px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 238px;
+	}
+	main {
+		padding: 36px 23px 55px 22px;
+		width: 100%;
+	}
+	h3 {
+		font-size: 28px;
+		padding-bottom: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+	h6 {
+		font-size: 17px;
+		margin-bottom: 19px;
+	}
+	.tours-card:first-child h6 {
+		margin-bottom: 16px;
+	}
+	.tours-card {
+	    margin-bottom: 90px;
+		}
+	.mobile-nonstandard {
+	    margin-bottom: 78px;
+	}
+	.tours-card>img {
+    	width: 52.5%;
+	}
+	.mobile-nonstandard>img {
+		height: 161px;
+	}
+	.tour-info {
+	    padding-left: 3px;
+	}
+	.tour-info>p {
+    	font-size: 14px;
+    	margin-bottom: 3px;
+	}
+	.tour-info>p.blue-price {
+	    font-size: 18px;
+	    padding-bottom: 15px;	
+	}
+	.mobile-nonstandard p.blue-price {
+	    padding-bottom: 9px;	
+	}
+	.tour-info>input {
+	    width: 92px;
+	    font-size: 15px;
+	    line-height: 21px;
+	    margin-top: 13px;
+	}
+	.mobile-nonstandard input {
+	    margin-top: 15px;
+	}
+	.mobile-none {
+		display: none;
+	}
+
+	aside.tours-search {
+    	padding-left: 12px;
+	}
+	.tours-search h3 {
+		margin-top: -3px;
+	}
+	form.browse {
+		padding-left: 17.5%;
+    	padding-right: 15%;
+    	margin-bottom: 62px;
+	}
+	form.search>input {
+    	margin-top: 10px;
+    	margin-left: 5px;
+	}
+	.top-button {
+		right: 3%;
+	}
+}

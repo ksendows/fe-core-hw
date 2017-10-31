@@ -1,0 +1,91 @@
+main {
+	width: var(--main-width);
+	height: auto;
+	padding: 68px 51px 98px 51px;
+	background-color: #ffffff;
+	display: block;
+}
+
+h3 {
+	font: 32px 'Pathway Gothic One', Myriad Pro;
+	text-transform: uppercase;
+	padding-bottom: 32px;
+	margin-left: 10px;
+}
+.gallery-item {
+	padding-left: 10px;
+    padding-right: 10px;
+}
+.gallery-item>a {
+	display: block;
+	margin-bottom: 40px;
+	position: relative;
+}
+.gallery-item>a::after {
+	display: none;
+	content: "";
+	background-image: url("../img/img_gallery/zoom.png");
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.gallery-item>a:hover::after {
+	display: block;
+}
+.gallery-item>a:hover>img {
+	filter: brightness(50%);
+}
+.gallery-item>a>img {
+	width: 100%;
+	height: auto;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	main {
+		width: var(--main-width);
+		padding: 61px 36px 43px 36px;
+	}
+	h3 {
+		font-size: 28px;
+		padding-bottom: 30px;
+	}
+	.gallery-item>a {
+		margin-bottom: 41px;
+	}
+	.gallery-item:last-child>a {
+		display: none;
+	}
+	.top-button {
+		transform: scale(1.2,1.2);
+    	right: 6.2%;
+	}	
+
+}
+
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 239px;
+	}
+	main {
+		width: 100%;
+		padding: 34px 27px 31px 27px;
+	}
+	h3 {
+		font-size: 28px;
+		margin-bottom: 0px;
+		margin-left: 9px;
+	}
+	.gallery-item>a {
+		width: 100%;
+    	height: auto;
+	}
+	
+	.gallery-item:nth-child(1n+7)>a {
+		display: none;
+	}
+}
