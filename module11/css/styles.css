@@ -1,0 +1,763 @@
+:root {
+  --main-width: 80%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+background-image: url("../img/background.png");
+background-size: cover;
+height: 100%;
+color: #4e5050;
+font: 13px/19px Arial;
+}
+
+header {
+	position: relative;
+	box-sizing: border-box;
+	width: var(--main-width);
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 49px;
+	height: 238px;
+}
+.logo {
+	height: 138px;
+	width: 138px;
+	background-color: white;
+	text-transform: uppercase;
+	font: 60px 'Dorsa', Myriad Pro;
+	color: #263555;
+	text-align: center;
+	line-height: 138px;
+	border-radius: 50%;
+}
+nav {
+	text-transform: uppercase;
+	font: 28px 'Pathway Gothic One', Myriad Pro;
+}
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.menu-item {
+	position: relative;
+}
+.menu-item a:link{
+	text-decoration: none;
+	color: #ffffff;
+}
+.menu-item a:visited {
+	color: #ffffff;
+}
+.menu-item a:hover {
+	color: #263555;
+}
+.submenu>.submenu-item>a {
+	text-decoration: none;
+	color: #6b7488;
+}
+.submenu>.submenu-item>a:hover {
+	color: #a2bce4;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    width: 67px;
+    height: 80px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: -7px;
+    top: 40px;
+    padding-top: 5px;
+ }
+li.submenu-item {
+	margin-bottom: 3px;
+}
+.submenu::before {
+	position: absolute;
+	left: 50%;
+	top: -5%;
+	border: solid;
+	content: " ";
+	height: 0;
+	width: 0;
+	border-width: 0 2px 3px 2px;
+	border-color: transparent transparent #ffffff transparent;
+}
+.menu-item:hover>.submenu {
+  	display: flex;
+}
+
+
+
+
+
+main {
+	box-sizing: border-box;
+	width: var(--main-width);
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 61px;
+	padding-right: 61px;
+	padding-bottom: 61px;
+	padding-top: 92px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+}
+.contacts-main {
+	padding-left: 58px;
+	padding-bottom: 102px;
+}
+.home-main {
+	display: block;
+	padding-top: 58px;
+	padding-bottom: 89px;
+}
+
+
+section.tours-specials {
+	flex: 23;
+}
+h3 {
+	font: 32px 'Pathway Gothic One', Myriad Pro;
+	text-transform: uppercase;
+	padding-bottom: 42px;
+}
+main.contacts-main h3 {
+	padding-bottom: 43px;
+}
+section.tours {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+div.tours-card {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.tours-card>img {
+	padding-right: 20px;
+	padding-bottom: 80px;
+}
+h6 {
+	font: 12px Arial;
+	color: #263555;
+	padding-bottom: 13px;
+}
+div.tour-info {
+	position: relative;
+}
+div.tour-info>p {
+	font: 10px Arial;
+	color: #4e5050;
+	padding-bottom: 5px;
+}
+div.tour-info>p.blue-price {
+	font: 13px Arial;
+	color: #38afe5;
+	padding-bottom: 13px;
+	text-transform: uppercase;
+}
+div.tour-info>input {
+	width: 63px;
+	font: 12px/18px Arial;
+	position: absolute;
+	margin-top: 20px;
+	right: 50%;
+}
+
+
+.contacts {
+	padding-top: 80px;
+}
+.contacts table {
+	margin-bottom: 43px;
+    /*margin-left: -31px;*/
+}
+.contacts table caption {
+	padding-bottom: 20px;
+	font-size: 14px;
+	text-align: left;
+	width: 80%;
+}
+.contacts>table:last-child>caption {
+	padding-bottom: 4px;
+}
+.contacts table a, .contacts table {
+	text-decoration: none;
+	color: #666565;
+}
+.contacts table a[href*="mailto"] {
+	color: #fa7e7e;
+}
+.contacts table td {
+	width: 98px;
+}
+
+section.map {
+	flex: 2;
+}
+section.contact {
+	flex: 1;
+}
+
+
+
+.slider {
+	position: relative;
+	width: 100%;
+	height: 579px;
+/*	background-image: url("../img/slider.png");
+	background-size: cover;*/
+}
+.slider-block {
+	position: absolute;	
+	height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.white-block {
+	top: 219px;
+	width: 225px;
+	background: #ffffff;
+	font: 22px 'Pathway Gothic One', Myriad Pro;
+	color: #263555;
+	line-height: 60px;
+
+}
+.blue-block {
+	top: 279px;
+	width: 276px;
+	background: #38afe5;
+	font: 34px 'Pathway Gothic One', Myriad Pro;
+	color: #ffffff;
+	line-height: 60px;
+}
+.slider-arrow {
+	position: absolute;
+	background: rgba(56, 175, 229, 0.5);
+	width: 45px;
+	height: 90px;
+	left: 37px;
+	bottom: 40px;
+}
+a.slider-arrow:hover {
+	background: rgba(56, 175, 229, 1);
+}
+.left-arrow {
+	border-radius: 100% 0 0 100% / 50% 0 0 50%;	
+}
+.right-arrow {
+	left: 82px;	
+	border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+.left-arrow::before, .right-arrow::before { /* stick of an arrow*/
+	content: "";
+	position: absolute;
+	top: 46px;
+	width: 10px;
+  	height: 1px;
+ 	background: #ffffff;  
+  }
+  .left-arrow::before {
+  	left: 27px;
+  }
+  .right-arrow::before {
+  	left: 9px;
+  }
+ .left-arrow::after, .right-arrow::after { /*tick of an arrow*/
+    content: "";
+    position: absolute;
+    top: 42px;
+	height: 7px;
+	width: 7px;
+	border: solid;
+	border-width: 1px;
+	transform: rotate(225deg);
+    }
+.right-arrow::after {
+    right: 26px;
+    border-color: transparent transparent #ffffff #ffffff;
+    }
+.left-arrow::after {
+    right: 9px;
+    border-color: #ffffff #ffffff transparent transparent;
+    }
+
+section.top-destinations {
+	width: 100%;
+	margin-top: 50px;
+}
+figure.destination {
+	position: relative;
+	display: inline-block;
+	height: 271px;
+	color: #e0e4e7;
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+div.destination-text {
+	position: absolute;
+	width: 51%;
+	height: 100%;
+	background-color: #193149;
+	font: 10px/15px Arial;
+	opacity:0;
+  	transition:opacity 1s linear;
+}
+div.destination-text>h4 {
+	font-size: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding-top: 27px;
+	padding-bottom: 22px;
+	text-align: center;
+	text-transform: uppercase;
+}
+div.destination-text>p {
+	padding-left: 9px;
+	padding-right: 9px;
+	height: 145px;
+	overflow: scroll;
+}
+div.destination-text>input {
+	width: 63px;
+	font: 12px/18px Arial;
+	position: absolute;
+	bottom: 22px;
+	right: 11px;
+}	
+figure.destination:hover>div.destination-text {
+  	opacity: 1;
+}
+figure.column-left {
+	float: left;
+	width: 32%;
+	background-image:url("../img/Venice.png");
+}
+figure.column-right {
+	float: right;
+	width: 32%;
+	background-image:url("../img/Paris.png");
+}
+figure.column-center {
+	width: 32%;
+	background-image:url("../img/New York.png");
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+section.tabs-newsletter {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+section.tabs {
+	flex: 61;
+    margin-right: 19px;
+}
+.tab-wrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+.tab-name {
+    width: 124px;
+    height: 25px;
+    font: 19px 'Pathway Gothic One', Myriad Pro;
+    color: #6b7488;
+    background-color: #fcfafa;
+    border: 1px solid #dedbdb;
+    border-bottom: transparent;
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.tab-name:first-child {
+	color: #60bfea;
+	background-color: #ffffff;
+	position: relative;
+}
+.tab-name:first-child::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	top: 100%;
+}
+
+
+.post-wrapper {
+	border: 1px solid #dedbdb;
+    padding-bottom: 37px;
+    padding-top: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.post-body {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 41px;
+	position: relative;
+}
+.post-body:last-child {
+	margin-bottom: 28px;
+}
+article.post {
+	flex: 7;
+	min-width: 200px;
+}
+article.post>h5 {
+	font: 15px Arial;
+	color: #263555;
+	padding-bottom: 17px;
+}
+article.post>p {
+	font: 10px/15px Arial;
+	color: #4e5050;
+	padding-bottom: 15px;
+}
+.post-picture {
+	flex: 4;
+	padding-right: 18px;
+}
+.post-body>input {
+	width: 63px;
+	font: 12px/18px Arial;
+	position: absolute;
+    bottom: -17%;
+    right: 2%;
+}
+
+aside {
+	flex: 1;
+}
+
+aside.tours-search {
+	flex: 7;
+}
+
+aside.newsletter {
+	border: 1px solid #dedbdb;
+	color: #263555;
+	font: 15px Arial;
+	flex: 29;
+}
+.newsletter-head {
+	font: 19px 'Open Sans Condensed', Myriad Pro;
+	line-height: 1.6;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fcfafa;
+	border-bottom: 1px solid #dedbdb;
+}
+.newsletter-body {
+	padding-left: 15px;
+    padding-right: 15px;	
+}
+.newsletter-body>p {
+    padding-top: 40px;
+    padding-bottom: 21px;
+}
+.newsletter-body>input {
+	width: 100%;
+    height: 20px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    color: #868f8f;
+}
+.newsletter-list>li {
+	padding-top: 15px;
+	position: relative;
+	padding-left: 27px;
+}
+.newsletter-list>li>a {
+	text-decoration: none;
+	color: #263555;
+}
+.newsletter-list>li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background-color: #5abce9;
+	border-radius: 50%;
+    left: -2px;
+    top: 17px;
+}
+.newsletter-list>li::after {
+	position: absolute;
+    left: 0px;
+    top: 12px;
+	margin-top: 8px;
+	border: solid;
+	content: " ";
+	height: 4px;
+	width: 4px;
+	border-width: 1px;
+	border-color: transparent transparent #c0e5f7 #c0e5f7;
+	transform: rotate(225deg);
+}
+
+
+
+
+aside.side-bar {
+	color: #263555;
+}
+aside.side-bar>h3 {
+	padding-bottom: 37px;
+	margin-left: 7px;
+}
+
+aside.contact-form {
+	text-align: right;
+}
+aside.contact-form>h3 {
+	margin-right: 41%;
+}
+form {
+	font: 10px Arial;
+	color: #4e5050;
+	margin-bottom: 11px;
+}
+form p {
+	margin-bottom: -2px;
+}
+select {
+	width: 211px;
+	height: 21px;
+}
+.select-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 11px;
+    margin-bottom: 22px;
+    border: 1px solid #e1dfdf;
+}
+.select-wrapper select {
+    width: 100%;
+    height: 20px;
+    padding: 0 0 2px 7px;
+	background-color: #fcfafa;
+	color: #868f8f;
+	font: 10px Arial;
+	border: 0;
+	appearance: none;            /* remove arrow        */
+	-webkit-appearance: none;    /* remove arrow Chrome */
+	-moz-appearance: none;       /* remove arrow FF     */
+}
+.select-wrapper select::-ms-expand{
+    display: none;             /* remove arrow IE     */
+}
+
+.select-wrapper::after {
+    position: absolute;
+    left: 92%;
+    margin-top: -17px;
+    border: solid;
+    content: " ";
+    height: 7px;
+    width: 7px;
+    border-width: 1px;
+    border-color: transparent transparent #6c768b #6c768b;
+    transform: rotate(-45deg);
+}
+
+
+.select-wrapper::before {
+    position: absolute;
+    left: 88%;
+    margin-top: 0px;
+    content: " ";
+    height: 22px;
+    width: 1px;
+    background-color: #e1dfdf;
+    border: 0;
+}
+form.search>p:first-child {
+	color: #38afe5;
+    margin-bottom: 4px;
+}
+form.search>input {
+	margin-top: 41px;
+}
+form.browse input {
+	margin-top: 38px;
+    width: 63px;
+}
+form.contact>input, form.contact>textarea {
+    width: 86%;
+    height: 23px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    background-color: #fcfafa;
+    color: #263555;
+}
+form.contact>textarea {
+    height: 228px;
+}
+form.contact>input::-webkit-input-placeholder, .newsletter-body>input::-webkit-input-placeholder { /* WebKit browsers */
+  	padding-left: 7px;
+}
+form.contact>input:-moz-placeholder, .newsletter-body>input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  	padding-left: 7px;
+}
+form.contact>input::-moz-placeholder, .newsletter-body>input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  	padding-left: 7px;
+}
+form.contact>input:-ms-input-placeholder, .newsletter-body>input:-ms-input-placeholder { /* Internet Explorer 10+ */
+ 	padding-left: 7px;
+}
+form.contact>textarea::-webkit-input-placeholder { /* WebKit browsers */
+  	padding-left: 10px;
+  	padding-top: 15px;
+}
+form.contact>textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  	padding-left: 10px;
+  	padding-top: 15px;
+}
+form.contact>textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+  	padding-left: 10px;
+  	padding-top: 15px;
+}
+form.contact>textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+  	padding-left: 10px;
+  	padding-top: 15px;
+}
+
+form.contact>input[type="button"], form.contact>input[type="submit"] {
+	width: 81px;
+	height: 27px;
+	margin-left: 13px;
+	font-size: 15px;
+	color: #000000;
+	margin-top: 2px;
+    border-radius: 5px;
+}
+
+
+.footer-menu {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 133px;
+    width: var(--main-width);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #30455b;
+    padding-top: 43px;
+    padding-bottom: 15px;
+    padding-left: 11%;
+    padding-right: 12%;
+    box-sizing: border-box;
+}
+.footer-item {
+	padding-bottom: 13px;
+	width: 21%;
+	font: 16px/14px 'Open Sans Condensed', Myriad Pro;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.footer-item>a {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.footer-item>a.contact {
+	font: 12px/19px Arial;
+	text-decoration: none;
+	color: #ffffff;	
+}
+ul.footer-menu>li:last-child>a {
+	text-transform: none;
+}
+
+.social-links {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.social:hover {
+	filter: blur(2px);
+}
+.social>a {
+	width: inherit;
+	height: inherit;
+	display: block;
+}
+.fb {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.google {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -70px -10px;
+}
+.in {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -10px -70px;
+}
+.tw {
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -70px -70px;
+}
+
+div.copyright {
+	font: 12px Arial;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 52px;
+	width: 420px;
+}
+
+
+a.top-button {
+	display: block;
+	position: fixed;
+	right: 11.5%;
+	bottom: 15%;
+	width: 24px;
+	height: 24px;
+	background-color: #38afe5;
+	border-radius: 50%;
+	color: #c5e8f7;
+	transform:rotate(270deg) scale(1.3,1.3);
+}
+a.top-button::before {
+	position: absolute;
+	left: 11%;
+	margin-top: 8px;
+	border: solid;
+	content: " ";
+	height: 7px;
+	width: 7px;
+	border-width: 1px;
+	border-color: transparent transparent #c5e8f7 #c5e8f7;
+	transform: rotate(225deg);
+}
